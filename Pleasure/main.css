@@ -29,7 +29,7 @@ header nav a:before {
     content: "";
     position: absolute;
     width: 120%;
-    height: 10px;
+    height: 20px;
     bottom: 0;
     left: -10%;
     border-radius: 60px;
@@ -169,6 +169,32 @@ header button {
     font-weight: 600;
     border-radius: 5px;
     font-size: 15px;
+}
+
+header #left,
+header #right {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: #c5e2cc;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+header #left i,
+header #right i {
+    line-height: 60px;
+}
+
+header #left {
+    left: 7%;
+}
+
+header #right {
+    right: 7%;
 }
 
 @media screen and (max-width: 600px) {
